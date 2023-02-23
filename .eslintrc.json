@@ -29,6 +29,9 @@
 		"arrow-body-style": "off",
 		"react/function-component-definition": "off",
 		"react/no-array-index-key": "off",
-		"react/jsx-props-no-spreading": "off"
+		"react/jsx-props-no-spreading": "off",
+		"react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+		"react-hooks/exhaustive-deps": "warn", // Checks effect dependencies
+		"import/no-unresolved": "off"
 	}
 }
