@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import "../styles/globals.css";
 import { Montserrat } from "@next/font/google";
 
@@ -12,4 +13,10 @@ export default function App({ Component, pageProps }) {
       <Component {...pageProps} />
     </main>
   );
+=======
+import '@/styles/globals.css'
+
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />
+>>>>>>> parent of e2ed8cc (initial setup)
 }
