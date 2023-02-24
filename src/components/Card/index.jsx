@@ -6,7 +6,7 @@ const Card = ({ label, title, href, icon, value }) => {
     <Link href={href || "/"}>
       <Box
         sx={{
-          borderRadius: "16px",
+          borderRadius: "8px",
           height: "150px",
           padding: "24px",
           boxShadow:

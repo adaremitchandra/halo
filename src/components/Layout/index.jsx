@@ -7,7 +7,6 @@ import MenuIcon from "@mui/icons-material/Menu";
 import { useMediaQuery } from "@mui/material";
 import MuiAppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
-import Divider from "@mui/material/Divider";
 import MuiDrawer from "@mui/material/Drawer";
 import IconButton from "@mui/material/IconButton";
 import List from "@mui/material/List";
@@ -157,7 +156,6 @@ export default function Layout({ children }) {
             </Typography>
           )}
         </DrawerHeader>
-        <Divider />
         <List>
           {list.map((menu) => (
             <ListItem
@@ -199,7 +197,14 @@ export default function Layout({ children }) {
       </Drawer>
       <Box
         component="main"
-        sx={{ flexGrow: 1, px: 2, pt: 10, bgcolor: "#f5f5f5", height: "100vh" }}
+        sx={{
+          flexGrow: 1,
+          px: 2,
+          pt: 10,
+          bgcolor: "#f5f5f5",
+          height: "100vh",
+          overflow: "auto",
+        }}
       >
         {children}
       </Box>
