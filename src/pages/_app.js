@@ -1,22 +1,13 @@
-<<<<<<< HEAD
-import "../styles/globals.css";
-import { Montserrat } from "@next/font/google";
 
-const montserrat = Montserrat({
-  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
+import { CssBaseline, ThemeProvider } from "@mui/material";
+import "../styles/globals.css";
+import theme from "../utils/theme";
 
 export default function App({ Component, pageProps }) {
   return (
-    <main className={`${montserrat.className}`}>
+    <ThemeProvider theme={theme}>
+      <CssBaseline />
       <Component {...pageProps} />
-    </main>
+    </ThemeProvider>
   );
-=======
-import '@/styles/globals.css'
-
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />
->>>>>>> parent of e2ed8cc (initial setup)
 }
